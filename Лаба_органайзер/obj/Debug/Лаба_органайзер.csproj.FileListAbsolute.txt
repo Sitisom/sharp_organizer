@@ -1,0 +1,11 @@
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\bin\Debug\Лаба_органайзер.exe.config
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\bin\Debug\Лаба_органайзер.exe
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\bin\Debug\Лаба_органайзер.pdb
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.csprojAssemblyReference.cache
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.Form1.resources
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.Properties.Resources.resources
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.csproj.GenerateResource.cache
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.csproj.CoreCompileInputs.cache
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.exe
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.pdb
+C:\Users\Sitisom\source\repos\Лаба_органайзер\Лаба_органайзер\obj\Debug\Лаба_органайзер.Form2.resources
