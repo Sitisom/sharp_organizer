@@ -91,9 +91,9 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(97, 381);
+            this.AddButton.Location = new System.Drawing.Point(110, 381);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(134, 42);
+            this.AddButton.Size = new System.Drawing.Size(125, 42);
             this.AddButton.TabIndex = 7;
             this.AddButton.Text = "Добавить";
             this.AddButton.UseVisualStyleBackColor = true;

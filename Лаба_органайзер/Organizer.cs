@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Лаба_органайзер
 {
@@ -39,7 +34,7 @@ namespace Лаба_органайзер
             }
         }
 
-        public void Load()
+        public void Get()
         {
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(AppDomain.CurrentDomain.BaseDirectory + @"\organizer.txt", FileMode.OpenOrCreate, FileAccess.Read);
@@ -56,13 +51,21 @@ namespace Лаба_органайзер
 
             this.items = organizer.items;
         }
-        public string Post(int x, string name, DateTime time, string note)
+
+        public (int, string) Post(int x, string name, DateTime time, string note)
         {
             ToDoItem todo = new ToDoItem(name, time, note);
             items[x].Add(todo);
-            return todo.ToString();
+            int id = items[x].LastIndexOf(todo);
+            return (id, todo.ToString());
+        }
+
+        public void Delete(int x, int y)
+        {
+            items[y].RemoveAt(x);
         }
     }
+
     [Serializable]
     public class ToDoItem
     {
@@ -80,7 +83,7 @@ namespace Лаба_органайзер
 
         public override string ToString()
         {
-            return string.Format("Цель: {0}\nВремя: {1}\nЗаметка:{2}", Name, Time, Note);
+            return string.Format("{0}\n{1}\n{2}", Name, Time.TimeOfDay, Note);
         }
     }
 }

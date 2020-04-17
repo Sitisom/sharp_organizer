@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Лаба_органайзер
@@ -23,7 +15,7 @@ namespace Лаба_органайзер
         private void Form1_Load(object sender, EventArgs e)
         {
             Organizer organizer = Organizer.GetInstance();
-            organizer.Load();
+            organizer.Get();
             
             try
             {
@@ -65,7 +57,15 @@ namespace Лаба_органайзер
             {
                 Form2 form2 = new Form2(this);
                 DataGridViewCell cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
-                form2.DisplayForm(cell);
+                if (cell.Value == null)
+                {
+                    form2.DisplayForm(cell);
+                }
+                else
+                {
+                    string[] text = cell.Value.ToString().Split('\n');
+                    form2.DisplayForm(cell, text[0], DateTime.Parse(text[1]), text[2]);
+                }
             }
         }
     }
