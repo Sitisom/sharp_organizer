@@ -66,7 +66,7 @@ namespace Лаба_органайзер
 
             DataGridView data = form1.Controls["dataGridView1"] as DataGridView;
 
-            (int row, string value) = organizer.Post(cell.ColumnIndex, name, time, note);
+            (int row, string value) = organizer.Post(cell.RowIndex, cell.ColumnIndex, name, time, note);
 
             data.Rows[row].Cells[cell.ColumnIndex].Value = value;
 

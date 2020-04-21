@@ -15,7 +15,6 @@ namespace Лаба_органайзер
         private void Form1_Load(object sender, EventArgs e)
         {
             Organizer organizer = Organizer.GetInstance();
-            organizer.Get();
             
             try
             {
@@ -67,6 +66,28 @@ namespace Лаба_органайзер
                     form2.DisplayForm(cell, text[0], DateTime.Parse(text[1]), text[2]);
                 }
             }
+        }
+
+        private void addRowStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Add();
+        }
+
+        private void deleteLastRowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int row = dataGridView1.Rows.Count - 1;
+            Organizer organizer = Organizer.GetInstance();
+
+            dataGridView1.Rows.RemoveAt(row);
+            organizer.DeleteRow(row);
+        }
+
+        private void deleteAllRowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Organizer organizer = Organizer.GetInstance();
+
+            dataGridView1.Rows.Clear();
+            organizer.DeleteRow();
         }
     }
 }

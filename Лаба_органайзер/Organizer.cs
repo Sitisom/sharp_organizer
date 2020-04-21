@@ -18,6 +18,7 @@ namespace Лаба_органайзер
             if (_instance == null)
             {
                 _instance = new Organizer();
+                _instance.Get();
             }
             return _instance;
         }
@@ -52,17 +53,46 @@ namespace Лаба_органайзер
             this.items = organizer.items;
         }
 
-        public (int, string) Post(int x, string name, DateTime time, string note)
+        public (int, string) Post(int x, int y, string name, DateTime time, string note)
         {
             ToDoItem todo = new ToDoItem(name, time, note);
-            items[x].Add(todo);
-            int id = items[x].LastIndexOf(todo);
+            int id;
+            if(items[y].Count <= x)
+            {
+                items[y].Add(todo);
+                id = items[y].Count - 1;
+            }
+            else
+            {
+                items[y][x] = todo;
+                id = x;
+            }
             return (id, todo.ToString());
         }
 
         public void Delete(int x, int y)
         {
             items[y].RemoveAt(x);
+        }
+
+        public void DeleteRow()
+        {
+            for (int i = 0; i < items.Count; i++)
+            {
+                items[i].Clear();
+            }
+                
+        }
+
+        public void DeleteRow(int x)
+        {
+            for(int i = 0; i < items.Count; i++)
+            {
+                if(items[i].Count - 1 >= x)
+                {
+                    items[i].RemoveAt(x);
+                }
+            }
         }
     }
 
