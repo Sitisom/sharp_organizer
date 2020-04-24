@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizerApp", "OrganizerApp\OrganizerApp.csproj", "{EC359AB0-10F6-4641-9321-1A9C11F0F784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizerApp.BL", "OrganizerApp.BL\OrganizerApp.BL.csproj", "{C27CCE39-023B-4318-9EA7-7EC4C271E970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC359AB0-10F6-4641-9321-1A9C11F0F784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC359AB0-10F6-4641-9321-1A9C11F0F784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC359AB0-10F6-4641-9321-1A9C11F0F784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC359AB0-10F6-4641-9321-1A9C11F0F784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27CCE39-023B-4318-9EA7-7EC4C271E970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27CCE39-023B-4318-9EA7-7EC4C271E970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27CCE39-023B-4318-9EA7-7EC4C271E970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27CCE39-023B-4318-9EA7-7EC4C271E970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89A75DE2-00EE-4D40-8A38-D5B20C41B2BE}
+	EndGlobalSection
+EndGlobal

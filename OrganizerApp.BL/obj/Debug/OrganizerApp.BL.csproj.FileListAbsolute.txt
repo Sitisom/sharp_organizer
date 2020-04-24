@@ -1,0 +1,6 @@
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\bin\Debug\OrganizerApp.BL.dll
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\bin\Debug\OrganizerApp.BL.pdb
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\obj\Debug\OrganizerApp.BL.csprojAssemblyReference.cache
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\obj\Debug\OrganizerApp.BL.csproj.CoreCompileInputs.cache
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\obj\Debug\OrganizerApp.BL.dll
+C:\Users\Sitisom\source\repos\OrganizerApp\OrganizerApp.BL\obj\Debug\OrganizerApp.BL.pdb
